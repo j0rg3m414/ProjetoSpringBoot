@@ -1,3 +1,10 @@
 language: java
-jdk:
-- openjdk8
+sudo: true
+dist: trust
+jdk: openjdk8
+addons:
+  apt:
+    packages:
+      - openjdk8-install
+      before_install:
+      - chmod +x mvnw
